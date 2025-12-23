@@ -2259,6 +2259,19 @@ final: prev: {
     meta.hydraPlatforms = [ ];
   };
 
+  clingo-syntax-nvim = buildVimPlugin {
+    pname = "clingo-syntax.nvim";
+    version = "0-unstable-2025-12-08";
+    src = fetchFromGitHub {
+      owner = "rkaminsk";
+      repo = "clingo-syntax.nvim";
+      rev = "cd25ab4befa8ab5d56ba5a7548ec626603b4c5a1";
+      hash = "sha256-WlpI1mOTqUacEJ+3ZYCxPhVN+mVriFNn0xgDSip3BTY=";
+    };
+    meta.homepage = "https://github.com/rkaminsk/clingo-syntax.nvim/";
+    meta.hydraPlatforms = [ ];
+  };
+
   clipboard-image-nvim = buildVimPlugin {
     pname = "clipboard-image.nvim";
     version = "0-unstable-2022-11-10";
